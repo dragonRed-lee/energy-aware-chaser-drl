@@ -35,3 +35,48 @@ Each movement has a cost.
 ## State and Action
 
 **State**
+
+**Actions**
+- Up / Down / Left / Right
+- Stay (save energy)
+
+---
+
+## Reward Function
+- +10  Reach target
+- −0.1 Each step
+- −λE  Energy consumption
+- −5  Energy depleted
+
+Reward defines good behavior, not rules.
+
+---
+
+## Learning Process
+- Deep Reinforcement Learning
+- No predefined rules
+- Trial-and-error learning
+
+Policy emerges automatically.
+
+---
+
+## Learned Behavior
+- Avoids random motion
+- Balances speed and energy
+- Intelligent decision-making
+
+---
+
+## Real-World Relevance
+- Robot motion planning
+- Energy-aware control
+- Smart factory / automation
+
+---
+
+## Conclusion
+Simple environment  
+Clear reward design  
+Energy-aware intelligent control
+
