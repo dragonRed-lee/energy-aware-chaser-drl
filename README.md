@@ -40,6 +40,46 @@ Each movement has a cost.
 
 ---
 
+## How the Game Works
+
+This game is a simple environment designed to demonstrate
+energy-aware decision making using reinforcement learning.
+
+### Step-by-step Process
+
+1. The game starts with:
+   - An agent placed on a 2D grid
+   - A target placed at another location
+   - A fixed amount of energy
+
+2. At each time step:
+   - The agent observes the current state  
+     (its position, the target position, and remaining energy)
+   - The agent chooses one action:
+     **Up, Down, Left, Right, or Stay**
+
+3. After the action:
+   - The agent moves (or stays)
+   - Energy is consumed
+   - A reward is given based on the outcome
+
+4. The target moves randomly to a nearby position.
+
+5. The episode ends when:
+   - The agent reaches the target (success), or
+   - The agent runs out of energy (failure)
+
+### Objective
+
+The goal is not only to reach the target,
+but to reach it **using as little energy as possible**.
+
+The agent learns this behavior automatically
+by maximizing the total accumulated reward.
+
+
+---
+
 
 ## State and Action
 
