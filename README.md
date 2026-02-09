@@ -28,7 +28,6 @@ Goal: Reach the target using minimal energy
 
 
 ## Environment Overview
-## Environment Overview
 
 ![Energy-Aware Chaser Environment](diagrams/Gemini_Generated_Image_8pniz08pniz08pni.png)
 
@@ -46,8 +45,6 @@ Each movement has a cost.
 
 ![Energy-Aware Chaser Environment](diagrams/Gemini_Generated_Image_wdmvpvwdmvpvwdmv.png)
 
-**State**
-
 **Actions**
 - Up / Down / Left / Right
 - Stay (save energy)
@@ -62,7 +59,7 @@ Each movement has a cost.
 - −λE  Energy consumption
 - −5  Energy depleted
 
-Reward defines good behavior, not rules.
+Reward defines good behavior, not movement rules.
 
 
 ---
