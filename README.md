@@ -45,7 +45,14 @@ Each movement has a cost.
 
 ![Energy-Aware Chaser Environment](diagrams/Gemini_Generated_Image_wdmvpvwdmvpvwdmv.png)
 
-**Actions**
+### State Components
+- **Ax, Ay** : Agent position in the grid
+- **Tx, Ty** : Target position in the grid
+- **Energy** : Remaining energy level of the agent
+
+The agent selects actions based solely on the current state.
+
+### Actions
 - Up / Down / Left / Right
 - Stay (save energy)
 
