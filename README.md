@@ -128,21 +128,42 @@ Policy emerges automatically.
 - Balances speed and energy
 - Intelligent decision-making
 
-
 ---
 
 
-## Real-World Relevance
-- Robot motion planning
-- Energy-aware control
-- Smart factory / automation
+## Pseudo Code: Environment Logic
+
+```python
+Initialize environment
+    set grid size
+    set max energy
+
+Reset environment
+    randomize agent position
+    randomize target position
+    energy = max_energy
+    return state
+
+Step(action)
+    if action != STAY:
+        move agent
+        energy -= move_cost
+
+    move target randomly
+
+    reward = -0.1
+    reward -= lambda * move_cost
+
+    if agent reaches target:
+        reward += 10
+        done = True
+
+    if energy <= 0:
+        reward -= 5
+        done = True
+
+    return next_state, reward, done```
 
 
----
 
-
-## Conclusion
-Simple environment  
-Clear reward design  
-Energy-aware intelligent control
 
