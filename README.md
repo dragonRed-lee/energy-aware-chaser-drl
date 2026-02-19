@@ -50,7 +50,8 @@ energy-aware decision making using reinforcement learning.
 1. The game starts with:
    - An agent placed on a 2D grid
    - A target placed at another location
-   - A fixed amount of energy
+   - A fixed amount of energy at 25-30
+     (Calculate with Initial Power ≈ 1.5 × (grid 10*10))
 
 2. At each time step:
    - The agent observes the current state  
