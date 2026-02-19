@@ -51,7 +51,7 @@ energy-aware decision making using reinforcement learning.
    - An agent placed on a 2D grid
    - A target placed at another location
    - A fixed amount of energy at 25-30
-     (Calculate with Initial Power ≈ 1.5 × (grid 10*10))
+     (Initial Power ≈ 1.5 × (max step=18))
 
 2. At each time step:
    - The agent observes the current state  
